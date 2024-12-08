@@ -79,3 +79,8 @@ Si encuentras problemas relacionados con el Android SDK o ADB, verifica que:
 
 La variable ANDROID_SDK_ROOT está configurada correctamente.
 Tu dispositivo está en modo de depuración USB.
+![image](https://github.com/user-attachments/assets/b39f3fee-432d-4abd-8061-8cb27f86b755)
+![WhatsApp Image 2024-12-08 at 2 56 09 PM (1)](https://github.com/user-attachments/assets/1b667017-83a6-4cf5-b567-884d67fd77c0)
+![WhatsApp Image 2024-12-08 at 2 56 09 PM](https://github.com/user-attachments/assets/6923ec9c-940f-4bd9-8da7-2a9659dd2ebd)
+
+
