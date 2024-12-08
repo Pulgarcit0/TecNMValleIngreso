@@ -1,3 +1,7 @@
+#LInk del apk
+[https://www.mediafire.com/file/arq5mi7dcj0g6ij/ITVOTec.apk/file]
+
+
 # Ejecución de la Aplicación en Android
 
 Sigue estos pasos para configurar y ejecutar la aplicación en un dispositivo Android.
