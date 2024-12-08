@@ -1,0 +1,83 @@
+/* Estilos generales para el contenedor de contenido */
+ion-content {
+  --background: #f0f8ff; /* Fondo claro */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Estilos del formulario */
+form {
+  background-color: #ffffffcc; /* Blanco semitransparente */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(45, 43, 43, 0.12);
+}
+
+/* Espaciado entre los ion-items */
+ion-item {
+  margin-bottom: 15px;
+}
+
+/* Estilo del botón de submit */
+.submit-button {
+  margin-top: 20px;
+  background-color: #003366; /* Azul TecNM */
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* Texto informativo del formulario */
+form div {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: rgba(51, 51, 51, 0);
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  padding: 10px 0;
+  background-color: #ffffffcc; /* Semitransparente */
+  border-radius: 8px;
+  box-shadow: 0 -2px 8px rgba(137, 145, 164, 0.07);
+}
+
+/* Contenedor de íconos sociales */
+.social-icons-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* Íconos sociales */
+.social-icon {
+  font-size: 24px;
+  color: #0066cc;
+  margin: 0 10px;
+}
+
+/* Información del footer */
+.footer-info p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: rgba(21, 74, 189, 0.86);
+}
+
+.footer-info a.text-primary {
+  color: #003366;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-info a.text-primary:hover {
+  text-decoration: underline;
+}
+
+/* Logo TecNM */
+.tecnm-logo {
+  width: 50px;
+  margin-top: 10px;
+}

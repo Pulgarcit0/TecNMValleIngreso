@@ -1,0 +1,105 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-content>
+        <!-- Redirección al hacer clic en el encabezado -->
+        <ion-list id="inbox-list">
+          <ion-item
+            routerDirection="root"
+            [routerLink]="['/folder/inbox']"
+            lines="none"
+            detail="false">
+            <ion-list-header>TECM Valle Oaxaca</ion-list-header>
+            <ion-note>951 517 0444</ion-note>
+          </ion-item>
+        </ion-list>
+        <!-- Botón Informática (solo en móvil) -->
+
+        <ion-list id="Informatica">
+          <ion-list-header>Informatica</ion-list-header>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item
+              *ngIf="isMobile"
+              routerDirection="root"
+              [routerLink]="['/informatica/home-informatica']"
+              lines="none"
+              detail="false"
+              routerLinkActive="selected"
+              [routerLinkActiveOptions]="{ exact: false}">
+              <ion-icon aria-hidden="true" slot="start" name="school-outline"></ion-icon>
+              <ion-label>Ing.Informática</ion-label>
+            </ion-item>
+            <ion-item
+              *ngIf="!isMobile"
+              routerDirection="root"
+              [routerLink]="['/informatica/list']"
+              lines="none"
+              detail="false"
+              routerLinkActive="selected">
+              <ion-icon aria-hidden="true" slot="start" name="desktop-outline"></ion-icon>
+              <ion-label>Registros</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+
+
+        <!-- Módulo Ingeniería en TICs -->
+        <ion-list id="tics">
+          <ion-list-header>TICS</ion-list-header>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item
+              *ngIf="isMobile"
+              routerDirection="root"
+              [routerLink]="['/tics']"
+              lines="none"
+              detail="false"
+              routerLinkActive="selected"
+              [routerLinkActiveOptions]="{ exact: true }">
+              <ion-icon aria-hidden="true" slot="start" name="school-outline"></ion-icon>
+              <ion-label>Ing. Tics</ion-label>
+            </ion-item>
+            <ion-item
+              *ngIf="!isMobile"
+              routerDirection="root"
+              [routerLink]="['/tics/listas']"
+              lines="none"
+              detail="false"
+              routerLinkActive="selected">
+              <ion-icon aria-hidden="true" slot="start" name="school-outline"></ion-icon>
+              <ion-label>Registros</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+
+        <!-- Módulo ciencias  -->
+        <ion-list id="ciencia-de-datos">
+          <ion-list-header>Ciencia De Datos</ion-list-header>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item
+              *ngIf="isMobile"
+              routerDirection="root"
+              [routerLink]="['/ciencia-de-datos/home']"
+              lines="none"
+              detail="false"
+              routerLinkActive="selected"
+              [routerLinkActiveOptions]="{ exact: true }">
+              <ion-icon aria-hidden="true" slot="start" name="school-outline"></ion-icon>
+              <ion-label>Ing.Ciencia De Datos</ion-label>
+            </ion-item>
+            <ion-item
+              *ngIf="!isMobile"
+              routerDirection="root"
+              [routerLink]="['/ciencia-de-datos/list']"
+              lines="none"
+              detail="false"
+              routerLinkActive="selected">
+              <ion-icon aria-hidden="true" slot="start" name="school-outline"></ion-icon>
+              <ion-label>Registros</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

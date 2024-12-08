@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar class="header-toolbar">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <div class="container-h text-center">
+      <ion-title class="header-title">Lista de Alumnos</ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen class="informatica-list-content">
+  <div class="container py-4 background-overlay">
+    <!-- Título de la Lista -->
+    <div class="card p-3 shadow section-transparent">
+      <h2 class="text-center text-primary">Alumnos Registrados</h2>
+
+      <!-- Tabla de Alumnos -->
+      <table class="table table-striped table-hover table-bordered">
+        <thead class="table-primary">
+        <tr>
+          <th>Nombre</th>
+          <th>Teléfono</th>
+          <th>Correo</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let alumno of alumnos">
+          <td>{{ alumno.Nombre }} {{ alumno.ApellidoP }} {{ alumno.ApellidoM }}</td>
+          <td>{{ alumno.NumeroT }}</td>
+          <td>{{ alumno.Correo }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Footer con íconos de redes sociales -->
+  <footer class="footer text-center mt-4">
+    <ion-icon name="logo-facebook" class="social-icon"></ion-icon>
+    <ion-icon name="logo-github" class="social-icon"></ion-icon>
+    <img src="https://raw.githubusercontent.com/Pulgarcit0/img/refs/heads/main/itvo/Itvo.png" alt="TecNM Logo" class="tecnm-logo">
+  </footer>
+</ion-content>

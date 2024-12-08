@@ -1,0 +1,55 @@
+<ion-content>
+  <!-- Formulario de aspirante -->
+  <form [formGroup]="aspiranteForm" (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input formControlName="Nombre"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Apellido Paterno</ion-label>
+      <ion-input formControlName="ApellidoP"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Apellido Materno</ion-label>
+      <ion-input formControlName="ApellidoM"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Correo</ion-label>
+      <ion-input type="email" formControlName="Correo"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Número de Teléfono</ion-label>
+      <ion-input type="tel" formControlName="NumeroT"></ion-input>
+    </ion-item>
+
+    <!-- Botón de submit -->
+    <ion-button expand="block" type="submit" [disabled]="!aspiranteForm.valid" class="submit-button">
+      Guardar
+    </ion-button>
+    <div>
+      Formulario válido: {{ aspiranteForm.valid }}
+    </div>
+
+  </form>
+
+  <!-- Footer con íconos de redes sociales y más información -->
+  <footer class="footer text-center mt-4">
+    <div class="social-icons-container">
+      <ion-icon name="logo-facebook" class="social-icon"></ion-icon>
+      <ion-icon name="logo-github" class="social-icon"></ion-icon>
+    </div>
+
+    <!-- Información adicional en el footer -->
+    <div class="footer-info">
+      <p>&copy; 2024 Instituto Tecnológico del Valle de Oaxaca. Todos los derechos reservados.</p>
+      <p><a href="/terminos-y-condiciones" class="text-primary">Términos y Condiciones</a> | <a href="/privacidad" class="text-primary">Política de Privacidad</a></p>
+    </div>
+
+    <!-- Logo TecNM -->
+    <img src="https://raw.githubusercontent.com/Pulgarcit0/img/refs/heads/main/itvo/Itvo.png" alt="TecNM Logo" class="tecnm-logo">
+  </footer>
+</ion-content>

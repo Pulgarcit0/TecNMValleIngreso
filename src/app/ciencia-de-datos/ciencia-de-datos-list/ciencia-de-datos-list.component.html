@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lista de Aspirantes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Tabla de aspirantes -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Aspirantes</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Teléfono</th>
+          <th>Correo</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let aspirante of aspirantes">
+          <td>{{ aspirante.Nombre }} {{ aspirante.ApellidoP }} {{ aspirante.ApellidoM }}</td>
+          <td>{{ aspirante.NumeroT }}</td>
+          <td>{{ aspirante.Correo }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Footer con íconos de redes sociales y más información -->
+  <footer class="footer">
+    <div class="social-icons-container">
+      <ion-icon name="logo-facebook" class="social-icon"></ion-icon>
+      <ion-icon name="logo-github" class="social-icon"></ion-icon>
+    </div>
+
+    <!-- Información adicional en el footer -->
+    <div class="footer-info">
+      <p>&copy; 2024 Instituto Tecnológico del Valle de Oaxaca. Todos los derechos reservados.</p>
+      <p><a href="/terminos-y-condiciones" class="text-primary">Términos y Condiciones</a> | <a href="/privacidad" class="text-primary">Política de Privacidad</a></p>
+    </div>
+
+    <!-- Logo TecNM -->
+    <img src="https://raw.githubusercontent.com/Pulgarcit0/img/refs/heads/main/itvo/Itvo.png" alt="TecNM Logo" class="tecnm-logo">
+  </footer>
+
+  <ng-template #noData>
+    <p>No hay datos disponibles.</p>
+  </ng-template>
+</ion-content>

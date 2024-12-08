@@ -1,0 +1,8 @@
+{
+  "name": "ValleOaxaca",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
